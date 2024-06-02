@@ -1,0 +1,80 @@
+﻿<Window x:Class="Repair_service.View.AddEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Repair_service.View" xmlns:viewmodel="clr-namespace:Repair_service.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainWindowVM}"
+        mc:Ignorable="d"
+        Title="Редактирование записи" Height="700" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition  Height="1.4*"/>
+            <RowDefinition  Height="1.4*"/>
+            <RowDefinition  Height="1.4*"/>
+            <RowDefinition  Height="1.4*"/>
+            <RowDefinition  Height="1.4*"/>
+
+        </Grid.RowDefinitions>
+
+        <Button Click="Button_Click_1"/>
+
+
+        <Label Grid.Row="1" Grid.Column="0"
+            VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15">Дата создания</Label>
+        <DatePicker 
+            x:Name="TaskSartTime" Grid.Row="1" Grid.Column="0" Margin="150,20,50,20"
+                 />
+
+        <Label Grid.Row="1" Grid.Column="1"
+            VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15">Дата завершения</Label>
+        <DatePicker Text="{Binding DateTimeOfTaskClosing}"
+            x:Name="TaskEndTime" Grid.Row="1" Grid.Column="1" Margin="150,20,50,20"
+                 />
+
+        <Label Grid.Row="2" Grid.Column="0"
+            VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15">Оборудование:</Label>
+        <TextBox Text="{Binding EquipmentForRepair}"
+            x:Name="Equipment" Grid.Row="2" Grid.Column="0" Margin="150,20,50,20"
+                 />
+
+        <Label Grid.Row="2" Grid.Column="1"
+            VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15">Тип проблемы</Label>
+        <TextBox Text="{Binding TypeOfIssue}"
+            x:Name="TypeOfIssue" Grid.Row="2" Grid.Column="1" Margin="150,20,50,20"
+                 />
+
+        <Label Grid.Row="3" Grid.Column="0"
+            VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15">Фамилия Клиента</Label>
+        <TextBox Text="{Binding SurnameOfCustomer}"
+            x:Name="ClientSurName" Grid.Row="3" Grid.Column="0" Margin="150,20,50,20"
+                 />
+
+        <Label Grid.Row="3" Grid.Column="1"
+            VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15">Имя клиента:</Label>
+        <TextBox Text="{Binding NameOfCustomer}"
+            x:Name="ClientName" Grid.Row="3" Grid.Column="1" Margin="150,20,50,20"
+                 />
+
+        <Label Grid.Row="4" Grid.Column="0"
+            VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15">Телефон клиента:</Label>
+        <TextBox Text="{Binding PhoneNumber}"
+            x:Name="ClientPhoneNumber" Grid.Row="4" Grid.Column="0" Margin="150,20,50,20"
+                 />
+
+        <Label Grid.Row="4" Grid.Column="1"
+            VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15">Ответственный</Label>
+        <TextBox Text="{Binding Employee}"
+            x:Name="Responsible" Grid.Row="4" Grid.Column="1" Margin="150,20,50,20"
+                 />
+
+        <TextBox Text="{Binding DescriptionOfIssue}"
+            x:Name="Description" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" Margin="050,5,50,5"
+                 />
+        
+    </Grid>
+</Window>

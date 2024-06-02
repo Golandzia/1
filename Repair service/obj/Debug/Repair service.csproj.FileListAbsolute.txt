@@ -1,0 +1,27 @@
+D:\Projects\praticeExam\Repair service\Repair service\bin\Debug\Repair service.exe.config
+D:\Projects\praticeExam\Repair service\Repair service\bin\Debug\Repair service.exe
+D:\Projects\praticeExam\Repair service\Repair service\bin\Debug\Repair service.pdb
+D:\Projects\praticeExam\Repair service\Repair service\bin\Debug\EntityFramework.dll
+D:\Projects\praticeExam\Repair service\Repair service\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\praticeExam\Repair service\Repair service\bin\Debug\EntityFramework.xml
+D:\Projects\praticeExam\Repair service\Repair service\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\praticeExam\Repair service\Repair service\bin\Debug\ru\EntityFramework.resources.dll
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service.csproj.AssemblyReference.cache
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service.csproj.SuggestedBindingRedirects.cache
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\App.g.cs
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service_Content.g.cs
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service_MarkupCompile.cache
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service_MarkupCompile.lref
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service.g.resources
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair_service.Properties.Resources.resources
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service.csproj.GenerateResource.cache
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service.csproj.CoreCompileInputs.cache
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service.csproj.CopyComplete
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service.exe
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\Repair service.pdb
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\View\AuthorizationWindow.g.cs
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\View\AuthorizationWindow.baml
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\View\MainWindow.g.cs
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\View\MainWindow.baml
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\View\AddEditWindow.g.cs
+D:\Projects\praticeExam\Repair service\Repair service\obj\Debug\View\AddEditWindow.baml

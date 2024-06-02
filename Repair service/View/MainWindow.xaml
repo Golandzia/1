@@ -1,0 +1,62 @@
+﻿<Window x:Class="Repair_service.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Repair_service.View" xmlns:viewmodel="clr-namespace:Repair_service.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainWindowVM}"
+        mc:Ignorable="d"
+        Title="Заявки" Height="650" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.15*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.95*"/>
+                <ColumnDefinition Width="0.05*"/>
+            </Grid.ColumnDefinitions>
+            <Label HorizontalAlignment="Left" Content="Заявки" VerticalAlignment="Center"
+               FontSize="30" Grid.Row="0" Grid.Column="0" Margin="20,0,0,0"/>
+
+            <Button x:Name="exitBtn" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                Grid.Column="1" Margin="0,10,20,10" FontSize="25">👨‍💼</Button>
+        </Grid>
+
+        <DataGrid 
+            Grid.Row="1" x:Name="Tsks"
+                  SelectedItem="{Binding SelectedTask}"
+                  ItemsSource="{Binding Task}" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер заявки" Binding="{Binding ID}"/>
+                <DataGridTextColumn Header="Дата принятия" Binding="{Binding Date_of_adding}"/>
+                <DataGridTextColumn Header="Дата закрытия задачи" Binding="{Binding Date_of_taskclosing}"/>
+                <DataGridTextColumn Header="Обороудование" Binding="{Binding Equipment_for_repait}"/>
+                <DataGridTextColumn Header="Тип проблемы" Binding="{Binding Type_of_issue}"/>
+                <DataGridTextColumn Header="Описание проблемы" Binding="{Binding Description_of_issue}"/>
+                <DataGridTextColumn Header="Фамилия клиента" Binding="{Binding Client_surname}"/>
+                <DataGridTextColumn Header="Имя клиента" Binding="{Binding Client_name}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.55*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.15*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="EditBtn"
+                Grid.Column="1" FontSize="15" Content="Редактировать" Margin="10,20,10,20" Click="EditBtn_Click"/>
+            <Button x:Name="AddBtn"
+                Grid.Column="2" FontSize="15" Content="Добавить" Margin="10,20,10,20" Click="AddBtn_Click"/>
+            <Button x:Name="DeleteBtn"
+                Grid.Column="3" FontSize="15" Content="Удалить" Margin="10,20,10,20" Click="DeleteBtn_Click"/>
+
+        </Grid>
+        
+    </Grid>
+</Window>
